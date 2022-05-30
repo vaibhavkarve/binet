@@ -13,15 +13,18 @@ implementations in every language that *I* know, use or care about.
 Including implementations in every single language out there is
 non-goal of this project.
 
+* Project-wide commands
+** TODO: explain the justfile commands
+
 * Implementations
 
-|----------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
-| Language | Naive | Memoized | Accumulator | Binet | Binet-log | Notes                                                                                                    |
-|----------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
-| Python   | ✓     | ✓        | ✓           | ✓     | ✓         | We also implement a match-case based naive function (using new syntax introduced in Python version 3.10) |
-|          |       |          |             |       |           |                                                                                                          |
-|          |       |          |             |       |           |                                                                                                          |
-|          |       |          |             |       |           |                                                                                                          |
+|---------------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
+| Language      | Naive | Memoized | Accumulator | Binet | Binet-log | Notes                                                                                                    |
+|---------------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
+| Python [[file:fib.py][fib.py]] | ✓     | ✓        | ✓           | ✓     | ✓         | We also implement a match-case based naive function (using new syntax introduced in Python version 3.10) |
+|               |       |          |             |       |           |                                                                                                          |
+|               |       |          |             |       |           |                                                                                                          |
+|               |       |          |             |       |           |                                                                                                          |
 
 
 * Timing, Testing and Tooling

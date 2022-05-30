@@ -14,10 +14,10 @@ Including implementations in every single language out there is
 non-goal of this project.
 
 * Table of Contents
-- [[*Project-wide commands]]
-- [[*Implementations]]
-- [[*Timing, testing and tooling]]
-- [[*Timing results]]
+- [[#project-wide-commands]]
+- [[#implementations]]
+- [[#timing,-testing-and-tooling]]
+- [[#timing-results]]
 * Project-wide commands
 ** TODO: explain the justfile commands
 

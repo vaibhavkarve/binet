@@ -1,7 +1,7 @@
 #+title: Binet
 #+author: Vaibhav Karve
 
-* Introduction
+
 Implement and time functions that produce the n-th term in the
 Fibonacci sequence in languages that *I* care about.
 
@@ -13,6 +13,11 @@ implementations in every language that *I* know, use or care about.
 Including implementations in every single language out there is
 non-goal of this project.
 
+* Table of Contents
+- [[*Project-wide commands]]
+- [[*Implementations]]
+- [[*Timing, testing and tooling]]
+- [[*Timing results]]
 * Project-wide commands
 ** TODO: explain the justfile commands
 
@@ -29,8 +34,7 @@ non-goal of this project.
 | D                    |       |      |          |             |       |           |                                                                                                                     |
 |----------------------+-------+------+----------+-------------+-------+-----------+---------------------------------------------------------------------------------------------------------------------|
 
-
-* Timing, Testing and Tooling
+* Timing, testing and tooling
 
 |-------------+-----------------+------------------+------------------|
 | Language    | Notes on timing | Notes on testing | Notes on tooling |
@@ -42,7 +46,6 @@ non-goal of this project.
 | Lua         |                 |                  |                  |
 | D           |                 |                  |                  |
 |-------------+-----------------+------------------+------------------|
-
 
 * Timing results
 ** TODO: Include results from timing of all the implementations

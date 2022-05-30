@@ -18,25 +18,31 @@ non-goal of this project.
 
 * Implementations
 
-|---------------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
-| Language      | Naive | Memoized | Accumulator | Binet | Binet-log | Notes                                                                                                    |
-|---------------+-------+----------+-------------+-------+-----------+----------------------------------------------------------------------------------------------------------|
-| Python [[file:fib.py][fib.py]] | ✓     | ✓        | ✓           | ✓     | ✓         | We also implement a match-case based naive function (using new syntax introduced in Python version 3.10) |
-|               |       |          |             |       |           |                                                                                                          |
-|               |       |          |             |       |           |                                                                                                          |
-|               |       |          |             |       |           |                                                                                                          |
+|----------------------+-------+------+----------+-------------+-------+-----------+---------------------------------------------------------------------------------------------------------------------|
+| Language             | Naive | Case | Memoized | Accumulator | Binet | Binet-log | Notes                                                                                                               |
+|----------------------+-------+------+----------+-------------+-------+-----------+---------------------------------------------------------------------------------------------------------------------|
+| Python [[file:fib.py][fib.py]]        | ✓     | ✓    | ✓        | ✓           | ✓     | ✓         |                                                                                                                     |
+| Haskell [[file:fib.hs][fib.hs]]       |       | ✓    |          |             |       |           |                                                                                                                     |
+| Common Lisp [[file:fib.lisp][fib.lisp]] | ✓     | ✓    | ✓        |             |       |           | Since memoization is not a built-in for CL, we implement a memoization utility taken from "On Lisp" by Paul Graham. |
+| Bash [[file:fib.sh][fib.sh]]          | ✓     | ✓     | No built-in memoization in bash |  ✓           |       |           |                                                                                                                     |
+| Lua                  |       |      |          |             |       |           |                                                                                                                     |
+| D                    |       |      |          |             |       |           |                                                                                                                     |
+|----------------------+-------+------+----------+-------------+-------+-----------+---------------------------------------------------------------------------------------------------------------------|
 
 
 * Timing, Testing and Tooling
 
-|----------+-----------------+------------------+------------------|
-| Language | Notes on timing | Notes on testing | Notes on tooling |
-|----------+-----------------+------------------+------------------|
-|          |                 |                  |                  |
-|          |                 |                  |                  |
-|          |                 |                  |                  |
-|          |                 |                  |                  |
-
+|-------------+-----------------+------------------+------------------|
+| Language    | Notes on timing | Notes on testing | Notes on tooling |
+|-------------+-----------------+------------------+------------------|
+| Python      |                 | [[file:test_fib.py][test_fib.py]]      |                  |
+| Haskell     |                 |                  |                  |
+| Common Lisp |                 | [[file:test_fib.lisp][test_fib.lisp]]    |                  |
+| Bash        |                 | [[file:test_fib.sh][test_fib.sh]]      |                  |
+| Lua         |                 |                  |                  |
+| D           |                 |                  |                  |
+|-------------+-----------------+------------------+------------------|
 
 
 * Timing results
+** TODO: Include results from timing of all the implementations

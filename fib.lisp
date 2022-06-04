@@ -37,11 +37,18 @@
 
 (setf (fdefinition 'fib_memoized) (memoize #'fib_memoized))
 
+(defun fib_accumulator (n &optional (a 0) (b 1))
+  "Recursively compute the fibonacci numbers using accumulated values."
+  (if (zerop n)
+      a  ;; return the accumulated value.
+      (fib_accumulator (- n 1) b (+ a b))))
+
 
 (defun main ()
   (print (fib_naive 35))
   (print (fib_case 35))
   (print (fib_memoized 35))
+  (print (fib_accumulator 35))
   (loop for i from 1 to 11
     do (print (fib_naive i))
     ))

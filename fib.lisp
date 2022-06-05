@@ -49,12 +49,21 @@
 	(phi (/ (+ 1 sqrt5) 2)))
     (round (/ (expt phi n) sqrt5))))
 
+(defun fib_binet_log (n)
+  "Binet-calculation but using a log for more efficient computation."
+  (let* ((sqrt5 (sqrt 5))
+	 (phi (/ (1+ sqrt5) 2))
+	 (phi_log (log phi)))
+    (round
+     (/ (exp (* phi_log n)) sqrt5))))
+
 (defun main ()
   (print (fib_naive 35))
   (print (fib_case 35))
   (print (fib_memoized 35))
   (print (fib_accumulator 35))
   (print (fib_binet 35))
+  (print (fib_binet_log 35))
   (loop for i from 1 to 11
     do (print (fib_naive i))
     ))
